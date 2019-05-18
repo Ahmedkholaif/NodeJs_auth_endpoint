@@ -1,0 +1,14 @@
+start server with env_variables if you like (defaults are set)
+
+PORT,SECRET,MONGO_URL= node .
+
+i.e.
+$$ PORT=3000 SECRET=secret MONGO_URL='mongodb://localhost:27017/Cognitev_db' node .
+
+end points:
+
+Post /users => create new user => form-data post body
+
+Post /users/login => login with phone_number , password => raw json post body
+
+Post /users/validate => validate user phone_number/auth-token

@@ -1,0 +1,21 @@
+{
+  "name": "back_end_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ahmed kholaif",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "country-data": "^0.0.31",
+    "del": "^4.1.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.7",
+    "multer": "^1.4.1",
+    "validator": "^10.11.0"
+  }
+}

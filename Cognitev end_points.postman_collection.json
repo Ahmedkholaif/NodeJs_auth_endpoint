@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "d4595a2b-9351-4ecb-afa7-4fea4a4bf567",
+		"name": "Cognitev end_points",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "first_name",
+							"value": "kkk",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "kholaif",
+							"type": "text"
+						},
+						{
+							"key": "country_code",
+							"value": "egy",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "01046341685",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "2010-02-20",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "a@smk.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number\":\"01046341685\",\n\t\"password\":\"111111\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:9000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/users/validate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlfbG9hZCI6eyJfaWQiOiI1Y2RkNmU1YmM3NGFmOTFkM2ZjNDI0OGYiLCJlbWFpbCI6ImFAc21rLmNvbSJ9LCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTU4MDE1NTkxfQ.XFDTY17VxC_8FQghn1Y-sOU7q5Kgh6nAEK9AQOs-_yM",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number\":\"01046341685\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/users/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
